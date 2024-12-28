@@ -4,7 +4,7 @@ import { Hero } from './components/Hero/Hero';
 import { About } from './sections/About/About';
 import { Projects } from './sections/Projects/Projects';
 import { Contact } from './sections/Contact/Contact';
-// import { Resume } from './sections/Resume/Resume';
+import { Resume } from './sections/Resume/Resume';
 import { Navbar } from './components/Navbar/Navbar';
 import { theme } from './theme/theme';
 
@@ -22,7 +22,7 @@ export function App() {
               <Contact />
             </>
           } />
-          {/*<Route path="/resume" element={<Resume />} />*/}
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
     </MantineProvider>

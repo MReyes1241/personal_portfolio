@@ -1,0 +1,60 @@
+.resumeSection {
+    padding: 4rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.subheading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--mantine-color-blue-dark, #1565c0);
+    margin-bottom: 1rem;
+}
+
+.card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--mantine-color-blue-dark, #1565c0);
+    margin-bottom: 0.5rem;
+}
+
+.cardTime {
+    display: block;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.skillsList {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 2rem;
+}
+
+.skillsList li {
+    margin-bottom: 0.5rem;
+}
