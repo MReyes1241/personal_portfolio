@@ -8,6 +8,7 @@ import { Resume } from './sections/Resume/Resume';
 import { ContactSuccess } from './pages/ContactSuccess';
 import { Error404 } from './pages/Error404';
 import { theme } from './theme/theme';
+import { TimelineSection } from './sections/Timeline/Timeline';
 import { Navbar } from './components/Navbar/Navbar';
 
 export function App() {
@@ -21,6 +22,7 @@ export function App() {
               <Hero />
               <About />
               <Projects />
+              <TimelineSection />
               <Contact />
             </>
           } />

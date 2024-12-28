@@ -1,0 +1,74 @@
+.timelineSection {
+    padding: 4rem 1rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--mantine-color-blue-dark, #1565c0);
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 0 auto;
+    max-width: 800px;
+    border-left: 2px solid var(--mantine-color-blue-light, #74c0fc);
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.timelineItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--mantine-color-blue-dark, #1565c0);
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+.timelineIcon {
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    padding: 0.25rem;
+    border-radius: 50%;
+    border: 2px solid var(--mantine-color-blue-light, #74c0fc);
+}
+
+.timelineContent {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eventTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--mantine-color-blue-dark, #1565c0);
+}
+
+.eventTime {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.eventDescription {
+    font-size: 1rem;
+    color: #374151;
+}
