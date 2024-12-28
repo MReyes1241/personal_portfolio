@@ -27,7 +27,7 @@ const mockProjects = [
 
 export function Projects() {
   return (
-    <section className={styles.projectSection}>
+    <section id="projects" className={styles.projectSection}>
       <h2 className={styles.projectHeading}>My Projects</h2>
       <div className={styles.projectGrid}>
         {mockProjects.map((project) => (

@@ -19,7 +19,7 @@ export function Contact() {
   };
 
   return (
-    <section className={styles.contactSection}>
+    <section id="contact" className={styles.contactSection}>
       <h2 className={styles.contactHeading}>Contact Me</h2>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <input
