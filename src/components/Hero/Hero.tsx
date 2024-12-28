@@ -4,20 +4,20 @@ import styles from './Hero.module.css';
 export function Hero() {
   return (
     <section className={styles.heroSection}>
-      <h1 className={styles.title}>
-        Hi, I'm <span>Manuel Reyes</span>
-      </h1>
-      <p className={styles.subtitle}>
-        A passionate Software Engineer building modern web experiences.
-      </p>
-      <Link
-        to="about"
-        smooth={true}
-        duration={500}
-        className={styles.heroButton}
-      >
-        Learn More
-      </Link>
+      <div className={styles.content}>
+        <p className={styles.subtitle}>Manuel Reyes</p>
+        <h1 className={styles.title}>
+          Crafting code to deliver <span> a more exciting</span> World.
+        </h1>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          className={styles.scrollIndicator}
+        >
+          ↓
+        </Link>
+      </div>
     </section>
   );
 }

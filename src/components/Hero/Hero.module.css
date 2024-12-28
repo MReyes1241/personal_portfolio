@@ -1,43 +1,64 @@
 .heroSection {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    background: var(--mantine-color-blue-light, #90caf9);
+    background: linear-gradient(135deg, #4a90e2, #1c3f95 50%, #051937 100%);
+    color: transparent; /* Makes the text hollow */
+    overflow: hidden;
 }
 
-.title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1565c0;
-    margin-bottom: 1rem;
-}
-
-.title span {
-    color: #0d47a1; /* Slightly darker blue for emphasis */
+.content {
+    max-width: 800px;
+    padding: 0 1rem;
 }
 
 .subtitle {
     font-size: 1.25rem;
-    color: #374151;
-    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #d1e8ff; /* Keeps subtitle filled */
 }
 
-.heroButton {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #1565c0;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 1rem;
+.title {
+    font-size: 4rem;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    line-height: 1.3;
+    color: transparent; /* Make the inside transparent */
+    -webkit-text-stroke: 2px #d1e8ff; /* Outline color and thickness */
+    text-transform: uppercase;
+}
+
+.title span {
+    -webkit-text-stroke: 2px #a0c4ff; /* Softer metallic highlight for emphasis */
+}
+
+.scrollIndicator {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d1e8ff; /* Light metallic blue */
+    text-decoration: none;
+    animation: bounce 1.5s infinite;
     cursor: pointer;
 }
 
-.heroButton:hover {
-    background-color: #0d47a1; /* Darker blue on hover */
+.scrollIndicator:hover {
+    color: #a0c4ff; /* Softer hover effect */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
