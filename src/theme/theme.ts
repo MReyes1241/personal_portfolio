@@ -57,6 +57,15 @@ export const themeOverride = createTheme({
     lg: '24',
     xl: '32',
   },
+
+  breakpoints: {
+    xs: '36em', // 576px - Mobile
+    sm: '48em', // 768px - Half Screen Default Mac?
+    md: '62em', // 992px - Half Screen 1920x1080p
+    lg: '75em', // 1200px
+    xl: '88em', // 1408px - Anything not fullscreen
+  },
+
 });
 
 export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride);

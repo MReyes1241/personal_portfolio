@@ -1,25 +1,26 @@
 import styles from './Projects.module.css';
+import { imageUrls } from '../../assets/images.ts'
 
 const mockProjects = [
   {
     id: 1,
     title: 'Project One',
     description: 'A mock description for Project One.',
-    image: 'https://via.placeholder.com/300x200',
+    image: imageUrls.placeholder.src ,
     link: '#',
   },
   {
     id: 2,
     title: 'Project Two',
     description: 'A mock description for Project Two.',
-    image: 'https://via.placeholder.com/300x200',
+    image: imageUrls.placeholder.src ,
     link: '#',
   },
   {
     id: 3,
     title: 'Project Three',
     description: 'A mock description for Project Three.',
-    image: 'https://via.placeholder.com/300x200',
+    image: imageUrls.placeholder.src ,
     link: '#',
   },
 ];

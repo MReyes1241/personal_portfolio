@@ -1,10 +1,11 @@
 import styles from './About.module.css';
+import { imageUrls } from '../../assets/images.ts'
 
 export function About() {
   return (
     <section className={styles.aboutSection}>
       <img
-        src="https://via.placeholder.com/150"
+        src={imageUrls.manuel.src}
         alt="Manuel Reyes"
         className={styles.aboutImage}
       />
