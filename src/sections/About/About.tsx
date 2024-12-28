@@ -3,7 +3,7 @@ import { imageUrls } from '../../assets/images.ts'
 
 export function About() {
   return (
-    <section className={styles.aboutSection}>
+    <section id="about" className={styles.aboutSection}>
       <img
         src={imageUrls.manuel.src}
         alt="Manuel Reyes"

@@ -1,39 +1,43 @@
 .heroSection {
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--mantine-color-blue-light, #90caf9);
-    color: white;
     text-align: center;
-    padding: 0 1rem;
+    height: 100vh;
+    background: var(--mantine-color-blue-light, #90caf9);
 }
 
-.heroTitle {
-    font-size: 3rem;
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1565c0;
     margin-bottom: 1rem;
 }
 
-.heroHighlight {
-    color: var(--mantine-color-blue-dark, #1565c0);
+.title span {
+    color: #0d47a1; /* Slightly darker blue for emphasis */
 }
 
-.heroText {
+.subtitle {
     font-size: 1.25rem;
+    color: #374151;
     margin-bottom: 2rem;
 }
 
 .heroButton {
-    padding: 0.75rem 2rem;
-    border-radius: 9999px;
-    font-size: 1rem;
-    font-weight: 500;
-    background: var(--mantine-color-blue-dark, #1565c0);
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1565c0;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .heroButton:hover {
-    background-color: var(--mantine-color-blue-accent, #0d47a1);
+    background-color: #0d47a1; /* Darker blue on hover */
 }
