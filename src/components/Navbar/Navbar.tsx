@@ -15,9 +15,9 @@ export function Navbar() {
         scroller.scrollTo(sectionId, {
           duration: 500,
           smooth: true,
-          offset: -70, // Adjust for navbar height if needed
+          offset: -70,
         });
-      }, 500); // Delay to ensure the page has loaded
+      }, 500);
     } else {
       // If already on the home page, scroll directly
       scroller.scrollTo(sectionId, {
