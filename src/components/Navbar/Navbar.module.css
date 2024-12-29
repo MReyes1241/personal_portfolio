@@ -5,9 +5,17 @@
     background-color: var(--mantine-color-blue-dark, #1565c0);
     padding: 1rem 2rem;
     color: white;
+    z-index: 1000;
+    transition: position 0.3s ease;
+}
+
+.sticky {
     position: sticky;
     top: 0;
-    z-index: 1000;
+}
+
+.relative {
+    position: relative;
 }
 
 .logo {
@@ -35,4 +43,18 @@
 
 .navLinks li a:hover {
     color: var(--mantine-color-blue-accent, #0d47a1);
+}
+
+.navButton {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navButton:hover {
+    text-decoration: none;
+    color: #0077cc; /* Optional hover color */
 }
